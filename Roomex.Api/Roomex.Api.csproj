@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>G:\My Works\Roomex\Roomex.Backend\Roomex.Api\Roomex.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Roomex.Backend.Data\Roomex.Backend.Data.csproj" />
+    <ProjectReference Include="..\Roomex.Backend.Services\Roomex.Backend.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roomex.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Roomex.Api.Controllers.DistanceCalculationController">
+            <summary>
+            Distance calculation Api controller
+            </summary>
+        </member>
+        <member name="M:Roomex.Api.Controllers.DistanceCalculationController.#ctor(Roomex.Backend.Services.Interfaces.IDistanceCalculationService,Microsoft.Extensions.Logging.ILogger{Roomex.Api.Controllers.DistanceCalculationController})">
+            <summary>
+            Initialize new instance of distance calculation Api controller
+            </summary>
+            <param name="distanceCalculationService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roomex.Api.Controllers.DistanceCalculationController.CalculateDistance(Roomex.Backend.Data.Dtos.RequestDto)">
+            <summary>
+            Calculate distance between two points (a, b)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roomex.Api.Startup.AddInjection(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            to inject services, repositories if exists
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Roomex.Api.Startup.InjectServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            to inject services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Roomex.Api.Startup.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Roomex.Backend.Data.Infrastructure.AppSettings)">
+            <summary>
+            add swagger to represent endpoints and its input and output
+            </summary>
+            <param name="services"></param>
+            <param name="appSettings"></param>
+        </member>
+    </members>
+</doc>
